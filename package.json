@@ -8,16 +8,13 @@
   "dependencies": {
     "express": "~3.0.0",
     "ini": "1.1.0",
+    "jshint": "^2.8.0",
     "nconf": "0.6.9",
     "serialport": "2.0.5",
     "socket.io": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*",
-    "grunt": "*",
-    "grunt-cli": "*",
-    "grunt-mocha-test": "*",
-    "grunt-contrib-jshint": "*",
     "chai": "*",
     "request": "*",
     "rewire": "*"
@@ -30,6 +27,6 @@
     "url": "https://github.com/techninja/cncserver.git"
   },
   "scripts": {
-    "test": "grunt --verbose"
+    "test": "jshint *.js test/*.js && mocha"
   }
 }
