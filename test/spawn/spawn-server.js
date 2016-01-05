@@ -44,7 +44,7 @@ exports.ready = function(callback) {
       if (callback) callback();
     }
   }, 50);
-}
+};
 
 exports.kill = function(callback){
   console.log('Killing child process ' + cncserver.pid  + '...');
@@ -59,7 +59,7 @@ exports.waitFor = function(v, callback) {
   } else {
     setTimeout( function(){ exports.waitFor(v, callback); }, 250);
   }
-}
+};
 
 /**
  * Util function, does a string exist in the array of strings?
@@ -86,4 +86,4 @@ function strInArray(str, ar) {
   return false;
 }
 
-exports.clear = function (){ exports.out = []; exports.err = []; }
+exports.clear = function (){ exports.out = []; exports.err = []; };

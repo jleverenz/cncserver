@@ -27,6 +27,6 @@
     "url": "https://github.com/techninja/cncserver.git"
   },
   "scripts": {
-    "test": "jshint *.js test/*.js && mocha"
+    "test": "jshint *.js test && mocha"
   }
 }
